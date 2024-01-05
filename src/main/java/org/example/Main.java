@@ -7,15 +7,15 @@ import org.example.fibonacci.impl.FibonacciRecursionImpl;
 public class Main {
     public static void main(String[] args) {
         long startIterations = System.currentTimeMillis();
-        new FibonacciIterationImpl().fibonacci(50);
+        new FibonacciIterationImpl().fibonacci(30);
         long endtIterations = System.currentTimeMillis();
         System.out.println("Iteration - " + (endtIterations - startIterations));
         long startDynamicProgramming = System.currentTimeMillis();
-        new FibonacciDynamicProgrammingImpl().fibonacci(50);
+        new FibonacciDynamicProgrammingImpl().fibonacci(30);
         long endtDynamicProgramming = System.currentTimeMillis();
         System.out.println("Dynamic Programming - " + (endtDynamicProgramming - startDynamicProgramming));
         long startRecursion = System.currentTimeMillis();
-        new FibonacciRecursionImpl().fibonacci(50);
+        new FibonacciRecursionImpl().fibonacci(30);
         long endRecursion = System.currentTimeMillis();
         System.out.println("Recursion - "+(endRecursion - startRecursion));
     }
